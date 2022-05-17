@@ -1,8 +1,11 @@
 let player = {
     name: "Per",
     chips: 200,
+    sayHello: function(){
+        console.log("Heisann") // methods are functions that are attached to an object.
+    }
 }
-
+player.sayHello()
 let cards = []
 let sum = 0
 let hasBlackJack = false
