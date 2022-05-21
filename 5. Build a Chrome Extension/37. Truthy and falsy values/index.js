@@ -1,10 +1,10 @@
-// const credits = 0
+const credits = 0
 
-// if (credits) {
-//     console.log("Let's play 🎰")
-// } else {
-//     console.log("Sorry, you have no credits 😭")
-// }
+if (credits) {   // javascript reads this as if (credits > 0) ==> this is a falsy value.
+    console.log("Let's play 🎰")
+} else {
+    console.log("Sorry, you have no credits 😭")
+}
 
 // truthy
 // falsy
