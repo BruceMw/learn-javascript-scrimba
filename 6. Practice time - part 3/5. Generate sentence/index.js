@@ -3,11 +3,23 @@
 
 // Example 1: if you pass in "largest countries",and ["China", "India", "USA"],
 // it should return the string: "The 3 largest countries are China, India, USA"
-
+let description = "largest countries"
+let largestCountries = ["China", "India", "USA"]
 // Example 2:If you pass in "best fruits" and ["Apples", "Bananas"], it should return:
 // "The 2 best fruits are Apples, Bananas"
 
 // Use both a for loop and a template string to solve the challenge
 function generateSentence(desc, arr) {
-    
+    let baseString = `the ${arr.length} ${desc} are `
+    const lastIndex = arr.length - 1
+    for (i=0; i<arr.length; i++){
+        if (i === lastIndex){
+            baseString += arr[i]
+        }
+        else{
+            baseString += arr[i] + ", "
+        }
+    } 
+    return baseString
 }
+console.log(generateSentence(description, largestCountries))
